@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../src/js.js"></script>
+
+    <title>Sicc</title>
+</head>
+
+<body>
+    <div class="container-fluid bg-white">
+        <div class="row">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand animate__animated animate__fadeInRight slow" href="#">Olá, Usuário! </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="index.html" class="nav-link text-light">Início</a>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ações
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                                    <li><a class="dropdown-item" href="#">Mudar senha</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <section class="main">
+            <div class="row main-row">
+                <div class="col-md-2 bg-dark menu-lateral animate__animated animate__slideInLeft">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary fs-5">Chamados</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-light fs-5" href="computadores.html">Computadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-5" href="mapeamento.html">Mapeamento</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-10 card-col">
+                    <h1 class="card-text fs-1 animate__animated animate__fadeInLeft">Chamados em andamento</h1>
+                    <br>
+                    <a class="btn btn-primary animate__animated animate__fadeIn animate__delay-2s" href="novochamado.html">Novo chamado</a>
+                    <br/>
+                    <div class="table-responsive">
+                        <table class="table table-light animate__animated animate__fadeIn animate__delay-2s">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pane total</th>
+                                    <th scope="col">Falhas operacionais</th>
+                                    <th scope="col">Falhas em programas </th>
+                                    <th scope="col">Outras falhas</th>
+                                    <th scope="col">Falhas nas impressoras</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-5 g-4 animate__animated animate__fadeInDown animate__faster animate__delay-1s">
+                        <div class="col">
+                            <div class="card">
+                                <img src="../img/falha-total.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Falha total</h5>
+                                    <p class="card-text">
+                                        <strong>Computador: </strong>001<br />
+                                        <strong>Tombamento: </strong>345885<br />
+                                        <strong>Localização: </strong>Sala dos Oficiais<br />
+                                    </p>
+                                    <p class="card-text">Computador não liga. Não apresenta som.
+                                    </p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Editar</button>
+                                        <button class="btn btn-success" type="button">Resolver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../img/falha-software.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Falha de software</h5>
+                                    <p class="card-text">
+                                        <strong>Computador: </strong>001<br />
+                                        <strong>Tombamento: </strong>345885<br />
+                                        <strong>Localização: </strong>Sala dos Oficiais<br />
+                                    </p>
+                                    <p class="card-text">Computador não liga. Não apresenta som.
+                                    </p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Editar</button>
+                                        <button class="btn btn-success" type="button">Resolver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../img/falha-erro.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Erro nos sistemas</h5>
+                                    <p class="card-text">
+                                        <strong>Computador: </strong>001<br />
+                                        <strong>Tombamento: </strong>345885<br />
+                                        <strong>Localização: </strong>Sala dos Oficiais<br />
+                                    </p>
+                                    <p class="card-text">Computador não liga. Não apresenta som.
+                                    </p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Editar</button>
+                                        <button class="btn btn-success" type="button">Resolver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../img/outras-falhas.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Outras falhas</h5>
+                                    <p class="card-text">
+                                        <strong>Computador: </strong>001<br />
+                                        <strong>Tombamento: </strong>345885<br />
+                                        <strong>Localização: </strong>Sala dos Oficiais<br />
+                                    </p>
+                                    <p class="card-text">Computador não liga. Não apresenta som.
+                                    </p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Editar</button>
+                                        <button class="btn btn-success" type="button">Resolver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../img/falha-impressora.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Impressora</h5>
+                                    <p class="card-text">
+                                        <strong>Computador: </strong>001<br />
+                                        <strong>Tombamento: </strong>345885<br />
+                                        <strong>Localização: </strong>Sala dos Oficiais<br />
+                                    </p>
+                                    <p class="card-text">Computador não liga. Não apresenta som.
+                                    </p>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Editar</button>
+                                        <button class="btn btn-success" type="button">Resolver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+</body>
+
+</html>

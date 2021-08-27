@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=PT+Sans&family=Poppins:wght@100;200;300&display=swap");
+html,
+body {
+    font-family: "PT Sans", sans-serif;
+    margin: 0;
+}
+
+.main-row {
+    height: 100vh;
+    width: 100vw;
+    .menu-lateral {
+        .text-logo {
+            text-align: center;
+            font-size: 7rem;
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        }
+        min-height: 100vh;
+        padding-top: 40vh;
+        .nav-item {
+            padding: 1rem;
+            font-weight: bold;
+        }
+    }
+    .card-col {
+        padding: 3rem;
+        padding-top: 8rem;
+        .card {
+            text-decoration: none;
+            color: #000;
+            img {
+                height: 100%;
+            }
+        }
+        .form-novo-chamado {
+            padding: 2rem;
+        }
+    }
+}
